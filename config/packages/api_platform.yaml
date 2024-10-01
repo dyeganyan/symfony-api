@@ -1,0 +1,15 @@
+api_platform:
+    title: Test-Payment API Platform
+    description: 'Product-Coupon-Tax API'
+    version: 1.0.0
+    formats:
+        json:
+            mime_types: ['application/json']
+    defaults:
+        stateless: true
+        cache_headers:
+            vary: ['Content-Type', 'Authorization', 'Origin']
+        extra_properties:
+            standard_put: true
+            rfc_7807_compliant_errors: true
+    use_symfony_listeners: true
